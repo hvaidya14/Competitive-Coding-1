@@ -1,6 +1,7 @@
 // Online Java Compiler
 // Use this editor to write, compile and run your Java code online
-
+//Time complexity O(logn)
+//Space complexity :constant time
 class Main {
     public static void main(String[] args) {
         int a[] ={1,2,3,5,6,8};
@@ -14,7 +15,6 @@ class Main {
             mid = low + (high-low)/2;
             int numberOfElements = mid - low;
             if (high - low == 1) {
-                System.out.println("always");
                 System.out.println(a[low] + 1);
                 break;
             }
